@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        body{
+            background-color: gray
+            ; 
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        header{
+            background-color: rgb(125, 152, 153);
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            color: aliceblue;
+            background-color: rgb(111, 170, 170);
+            text-align: center;
+            box-shadow: 1px 1px 1px black
+        }
+        nav > a{
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 40px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        #assuntos{
+            text-align: center;
+            background-color: rgb(194, 190, 190);
+        }
+
+        #noticia{
+            background-color: lightgrey;
+        }
+
+        aside{
+            text-align: right;
+            background-color: darkslategray;
+        }
+        
+        footer{
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>politica, esportes e tecnologia</p>
+        </section>
+        <section id="noticia">
+            <article>
+                <h2>noticias do brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At est id nesciunt labore mollitia recusandae rerum aperiam eum commodi exercitationem doloremque, minima animi iste incidunt quis autem accusamus totam neque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus saepe quasi necessitatibus accusamus iure tempore rem, minima exercitationem. Aliquid magnam esse velit nostrum reprehenderit expedita ab magni quidem assumenda voluptatibus!</p>
+            </article>
+                <aside> aritgo esrito por josé</aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>eu que fiz</p>
+    </footer>
+</body>
+</html>

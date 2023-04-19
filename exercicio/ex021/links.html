@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalizando links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: rgb(0, 255, 0);
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:active{
+            color: darkgoldenrod
+        }
+        .especial::before{
+            content: '>';
+        } 
+        .especial::after{
+            content: '<';
+        }
+        .especial{
+            background-color: aqua;
+        }
+        h1{
+            border: 1px solid black;
+            text-align: center;
+            border-width: 1px;
+            border-color: aqua;
+            background-color: darkcyan;
+            border-bottom-color: black;
+            border-radius: 50px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>personalizando um link</h1>
+    <p>
+        para aprender html e css3, acesse o <a href="https://gustavoguanabara.github.io/" target="_blank">Github do guanabara</a>
+    </p>
+    <p>
+        se quiser conhcer mais sobre os padroes, visite o site do <a href="https://www.w3c.br/" target="_blank">escrivtorio do W3C no Brasil</a>
+    </p>
+    <p>para acompanhar o scuroso, acesso o canal do <a href="https://www.cursoemvideo.com/" target="_blank" class="especial">curso em videos</a></p>
+</body>
+</html>

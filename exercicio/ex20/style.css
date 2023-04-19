@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body{
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#principal{
+    background-color: aqua;
+    color: black;
+    text-align: center;
+}
+
+.destaque{
+    background-color: rgba(219, 219, 140, 0.493);
+}
+
+.basico{
+    color: rgb(106, 192, 106);
+    text-decoration: underline;
+}
+
+.intermediario{
+    color: rgb(143, 143, 87);
+    text-decoration: underline;
+}
+
+.avancado{
+    color: rgb(235, 104, 104);
+    text-decoration: underline;
+}
