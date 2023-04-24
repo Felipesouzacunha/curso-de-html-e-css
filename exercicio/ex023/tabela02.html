@@ -12,6 +12,23 @@
             border-collapse: collapse;
         }
 
+         caption{
+            background-color: lightgray;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            border: 1px solid black;
+         }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        
+        tbody > tr:nth-child(even){
+            background-color: rgb(204, 204, 204);
+        }
+
         td, th{
             border: 1px solid black;
             padding: 8px;
@@ -20,16 +37,13 @@
             text-align: right;
          }
 
-        thead, tfoot{
-            background-color: gray;
-            color: white;
-        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grande</h1>
     <!--ANATOMIA DE TABELAS GRANDE
         TABLE
+        CAPTION
             THEAD
                 TR, TD ,TH 
             TBODY
@@ -38,9 +52,12 @@
                 TR, TD ,TH-->
 
     <table>
+        <caption>
+            5 Estados mais populosos
+        </caption>
         <thead>
-            <th>estado</th>
-            <th>população</th>
+            <th scope="col">estado</th>
+            <th scope="col" style="width: 50px;">população</th>
         </thead>
 
         <tbody>
@@ -68,7 +85,7 @@
         </tbody>
 
         <tfoot>
-            <th>População total</th>
+            <th scope="row">População total</th>
             <td class="num">101.310.890</td>
         </tfoot>
     </table>
