@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* ESTILOS PARA TELA*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    text-align: center;
+    background-color: darkgray;
+}
+menu ul{
+    list-style-type: none;
+    background-color: gray;
+}
+
+menu li{
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(85, 85, 85);
+}
+
+article{
+    width: 500px;
+    margin: auto;
+    text-align: justify;
+}
+
+article h2{
+    padding-bottom: 10px;
+}
